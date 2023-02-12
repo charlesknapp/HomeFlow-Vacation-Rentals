@@ -82,13 +82,13 @@ const AllProperties = () => {
                 <CustomButton
                   title={`Sort price ${currentPrice === 'asc' ? '↑' : '↓'}`}
                   handleClick={() => toggleSort('price')}
-                  backgroundColor="#475BE8"
-                  color="#FCFCFC"
+                  backgroundColor="#FCFCFC"
+                  color="#475BE8"
                 />
                 <TextField
                   variant="outlined"
                   color="info"
-                  placeholder="Search by title..."
+                  placeholder="Search by title, property type, ..."
                   value={currentFilterValues.title}
                   onChange={(e) => {
                     setFilters([
@@ -101,6 +101,7 @@ const AllProperties = () => {
                   }}
                   sx={{
                     maxWidth: "80%",
+                    color: '#626262',
                   }}
                 />
                 <Select
@@ -120,6 +121,9 @@ const AllProperties = () => {
                       }
                     ], 'replace')
                   }}
+                  sx={{ 
+                    color: '#626262',
+                   }}
                 >
                   <MenuItem value="">All</MenuItem>
                   {['Studio', 'Apartment', 'Condos',
@@ -131,8 +135,8 @@ const AllProperties = () => {
                 <CustomButton
                   title="Add"
                   handleClick={() => {navigate('/properties/create')}}
-                  backgroundColor="#475BE8"
-                  color="#FCFCFC"
+                  backgroundColor="#FCFCFC"
+                  color="#475BE8"
                   icon={<Add />}
                 />                
               </Box>
