@@ -30,7 +30,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
               id="outlined-basic"
               color="info"
               variant="outlined"
-              style={{ background: 'transparent', fontSize: '16px', borderColor: 'rgba(0,0,0,0.23)', borderRadius: 6, color: '#919191' }}
+              style={{ background: 'transparent', fontSize: '16px', borderWidth: 1, borderColor: 'rgba(0,0,0,0.23)', borderRadius: 6, color: '#919191' }}
               { ... register('title', { required: true }) }
             />
           </FormControl>
@@ -46,7 +46,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
               id="outlined-basic"
               variant="outlined"
               color="info"
-              style={{ width: '100%', background: 'transparent', fontSize: '16px', borderColor: 'rgba(0,0,0,0.23)', borderRadius: 6, padding: 10, color: '#919191' }}
+              style={{ width: '100%', background: 'transparent', fontSize: '16px', borderWidth: 1, borderColor: 'rgba(0,0,0,0.23)', borderRadius: 6, padding: 10, color: '#919191' }}
               { ... register('description', { required: true }) }
             />
           </FormControl>
@@ -92,7 +92,7 @@ const Form = ({ type, register, handleSubmit, handleImageChange, formLoading, on
               placeholder="e.g. 2295"
               type="number"
               variant="outlined"
-              style={{ background: 'transparent', fontSize: '16px', borderColor: 'rgba(0,0,0,0.23)', borderRadius: 6, color: '#919191' }}
+              style={{ background: 'transparent', fontSize: '16px', borderWidth: 1, borderColor: 'rgba(0,0,0,0.23)', borderRadius: 6, color: '#919191' }}
               { ... register('price', { required: true }) }
             />
           </FormControl>
